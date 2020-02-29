@@ -1,7 +1,7 @@
 ##########################################################################
 # File Name: brook.sh
-# Author: Name
-# mail: Name@qq.com
+# Author: TyrantLucifer
+# mail: TyrantLucifer@linuxstudy.cn
 # Created Time: Sat 29 Feb 2020 06:50:57 PM CST
 ##########################################################################
 #!/bin/bash
