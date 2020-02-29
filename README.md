@@ -26,7 +26,7 @@ chmod +x vim.sh
 - Note
 
 1. Before use,You should open the port you want to set or turn off the firewall and the user executing the shell script must be root.
-2. Support:`Centos``Ubuntu`
+2. Support:`Centos` `Ubuntu`
 3. You can use it to build MTProxy Service and setting the service auto start
 4. Start service:`systemctl start MTProxy`
 5. Stop service:`systemctl stop MTProxy`
