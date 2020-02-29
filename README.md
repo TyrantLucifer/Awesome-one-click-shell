@@ -51,3 +51,30 @@ chmod +x MTProxy.sh
 ./MTProxy.sh
 ```
 
+## Brook
+
+- Note
+
+1. Before use,You should open the port you want to set or turn off the firewall and the user executing the shell script must be `root`
+2. Support:`Ubuntu` `Centos`
+3. You can use it to build Brook service
+
+- How to use
+
+1. if you use `Ubuntu`
+
+```
+apt-get install wget -y
+wget http://raw.githubusercontent.com/TyrantLucifer/Awesome-one-click-shell/master/brook/brook.sh
+chmod +x brook.sh
+./brook.sh
+```
+
+2. if you use `Centos`
+
+```
+yum install wget -y
+wget http://raw.githubusercontent.com/TyrantLucifer/Awesome-one-click-shell/master/brook/brook.sh
+chmod +x brook.sh
+./brook.sh
+```
