@@ -15,8 +15,8 @@
 
 ``` shell
 
-yum install wget -y
-wget https://raw.githubusercontent.com/TyrantLucifer/master/vim/vim.sh 
+apt install wget -y
+wget https://raw.githubusercontent.com/TyrantLucifer/Awesome-one-click-shell/master/vim/vim.sh
 chmod +x vim.sh
 ./vim.sh
 
