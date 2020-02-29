@@ -7,9 +7,9 @@
 
 - Note
 
-    1. The user executing the shell script must be normal users have root permission
-    2. Support `Ubuntu`
-    3. You can use it to compile and install newest version vim on `Ubuntu`,and also you can package a deb file for your own vim!
+1. The user executing the shell script must be normal users have root permission
+2. Support `Ubuntu`
+3. You can use it to compile and install newest version vim on `Ubuntu`,and also you can package a deb file for your own vim!
 
 - How to use
 
