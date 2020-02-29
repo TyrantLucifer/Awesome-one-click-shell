@@ -1,3 +1,10 @@
+##########################################################################
+# File Name: vim.sh
+# Author: TyrantLucifer
+# mail: TyrantLucifer@linuxstudy.cn
+# Created Time: Sat 29 Feb 2020 02:08:23 PM CST
+##########################################################################
+
 #!/bin/bash
 
 # 获取版本库文件目录
