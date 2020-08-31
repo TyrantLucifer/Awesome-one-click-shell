@@ -78,3 +78,14 @@ wget http://raw.githubusercontent.com/TyrantLucifer/Awesome-one-click-shell/mast
 chmod +x brook.sh
 ./brook.sh
 ```
+
+## Record_bash_history
+
+- Note
+
+1. You can use it to record the bash history for all users.
+2. Support: All platform of Linux
+
+- How to use
+
+Edit the /etc/profile, add the `source path/bash_history.sh` at the end of profile. Enjoy it! Your server will more secure than ever before.
