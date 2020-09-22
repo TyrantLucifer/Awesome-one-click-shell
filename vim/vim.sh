@@ -51,7 +51,7 @@ function compile_vim(){
         --enable-multibyte \
         --enable-rubyinterp=yes \
         --enable-python3interp=yes \
-        --with-python3-config-dir=/usr/lib/$python3_release/$python3_config_dir \
+        --with-python3-config-dir=/usr/lib/$python3/$python3_config_dir \
         --enable-perlinterp=yes \
         --enable-luainterp=yes \
         --enable-gui=gtk2 \
