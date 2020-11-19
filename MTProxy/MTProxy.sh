@@ -79,6 +79,13 @@ function genrate_service_file(){
 
 }
 
+function remove(){
+    currentDir=`pwd`
+    sudo systemctl stop MTProxy
+    sudo rm -rf ${pwd}/MTProxy
+    sudo rm -f /etc/systemd/system/MTProxy.service
+}
+
 function print_info(){
     clear
     echo "你的专属MTProxy链接为:"
