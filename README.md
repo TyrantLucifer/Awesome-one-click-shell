@@ -89,3 +89,32 @@ chmod +x brook.sh
 - How to use
 
 Edit the /etc/profile, add the `source path/bash_history.sh` at the end of profile. Enjoy it! Your server will more secure than ever before.
+
+## Config ssh no passwd
+
+- Note
+
+1. You can use it to config current user to other server's user ssh no passwd.
+2. Support: All platform of Linux
+
+- How to use
+
+1. Install `expect`
+
+```shell
+yum install exepect -y
+```
+
+2. Edit host list file
+
+```text
+host username passwod
+
+ex: master001 root root
+```
+
+3. Execute shell
+
+```shell
+sh ssh_nopasswd.sh host_list_file_path
+```
