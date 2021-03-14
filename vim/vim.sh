@@ -7,14 +7,37 @@
 
 #!/bin/bash
 
+# 获取Linux系统版本
+function get_linux_distro()
+{
+    if grep -Eq "Ubuntu" /etc/*-release; then
+        echo "Ubuntu"
+    elif grep -Eq "CentOS" /etc/*-release; then
+        echo "CentOS"
+    else
+        echo "Unknow"
+    fi
+}
+
 # 获取版本库文件目录
 function get_python_library_path(){
+
+	distro=`get_linux_distro`
+	echo "Linux distro: ${distro}"
+	
+	if [ ${distro} == "Ubuntu" ]; then
+        lib_dir=lib
+	elif [ ${distro} == "CentOS" ]; then
+		lib_dir=lib64
+    else
+        echo "Not support linux distro: "${distro}
+    fi
 
     python3_release=`ls /usr/lib | grep python3`
 
     for python3 in ${python3_release}
     do
-        python3_config_dir=`ls /usr/lib/${python3} | grep config-`
+        python3_config_dir=`ls /usr/${lib_dir}/${python3} | grep config-`
         if [ ! ${python3_config_dir} ];then
             continue
         else
@@ -51,7 +74,7 @@ function compile_vim(){
         --enable-multibyte \
         --enable-rubyinterp=yes \
         --enable-python3interp=yes \
-        --with-python3-config-dir=/usr/lib/$python3/$python3_config_dir \
+        --with-python3-config-dir=/usr/${lib_dir}/${python3}/${python3_config_dir} \
         --enable-perlinterp=yes \
         --enable-luainterp=yes \
         --enable-gui=gtk2 \
@@ -63,9 +86,9 @@ function compile_vim(){
 
 function main(){
     get_python_library_path
-    remove_old_vim_version
-    install_prepare_relay
-    compile_vim    
+    # remove_old_vim_version
+    # install_prepare_relay
+    # compile_vim    
 }
 
 main
