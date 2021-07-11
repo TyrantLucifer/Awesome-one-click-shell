@@ -40,7 +40,7 @@ init_info(){
 
 download_brook(){
     brook_ver=$(wget -qO- "https://github.com/txthinking/brook/tags"| grep "/txthinking/brook/releases/tag/"| head -n 1| awk -F "/tag/" '{print $2}'| sed 's/\">//')
-    wget -N --no-check-certificate "https://github.com/txthinking/brook/releases/download/${brook_ver}/brook"
+    wget -O brook -N --no-check-certificate "https://github.com/txthinking/brook/releases/download/${brook_ver}/brook_linux_amd64"
     chmod +x brook
     echo -e "Brook最新版本号为:${red} $brook_ver ${plain}"
 }
