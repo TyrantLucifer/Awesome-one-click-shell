@@ -118,3 +118,27 @@ ex: master001 root root
 ```shell
 sh ssh_nopasswd.sh host_list_file_path
 ```
+
+## Superps
+
+- Note
+
+1. You can use it to find or kill quickly process that contains the keys you want to find or take up a port you want to use in daily work, when you want to kill a special process it will help you work efficiently.
+2. Support: All platform of Linux that has installed `lsof` `awk` `grep`
+
+- How to use
+
+Move script to `/use/bin` or other executable categories.
+
+- Examples
+
+``` shell
+superps find "openvpn" # find the process that contains "openvpn"
+
+superps kill "openvpn" # kill all the process that contains "openvpn"
+
+superps port 8080 # find the process that take up port 8080
+
+superps killport 8080 # kill the process that take up port 8080
+```
+
